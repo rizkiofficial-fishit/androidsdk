@@ -1,0 +1,36 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.ryzfinity.live'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ryzfinity.live"
+        minSdk 24
+        targetSdk 34
+        versionCode 2
+        versionName "2.0"
+        ndk { abiFilters 'arm64-v8a', 'armeabi-v7a' }
+        externalNativeBuild {
+            cmake { arguments '-DANDROID_STL=c++_shared' }
+        }
+    }
+
+    externalNativeBuild {
+        cmake { path "CMakeLists.txt" }
+    }
+
+    sourceSets {
+        main { jniLibs.srcDirs = ['libnode/bin'] }
+    }
+
+    buildTypes {
+        release { minifyEnabled false }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
