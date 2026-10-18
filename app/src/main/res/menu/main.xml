@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/m_start" android:title="Mulai alert di background" android:showAsAction="never" />
+    <item android:id="@+id/m_stop" android:title="Stop alert background" android:showAsAction="never" />
+    <item android:id="@+id/m_overlay" android:title="Izinkan overlay (lebih stabil)" android:showAsAction="never" />
+    <item android:id="@+id/m_reload" android:title="Muat ulang dashboard" android:showAsAction="never" />
+    <item android:id="@+id/m_server" android:title="Ganti alamat server" android:showAsAction="never" />
+</menu>
