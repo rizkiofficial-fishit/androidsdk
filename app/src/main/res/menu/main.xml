@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/m_alert_on" android:title="Nyalakan alert (suara)" android:showAsAction="never" />
-    <item android:id="@+id/m_alert_off" android:title="Matikan alert (suara)" android:showAsAction="never" />
-    <item android:id="@+id/m_overlay" android:title="Izinkan overlay (lebih stabil)" android:showAsAction="never" />
-    <item android:id="@+id/m_reload" android:title="Muat ulang dashboard" android:showAsAction="never" />
-    <item android:id="@+id/m_log" android:title="Lihat log server" android:showAsAction="never" />
-    <item android:id="@+id/m_quit" android:title="Keluar total" android:showAsAction="never" />
-</menu>
